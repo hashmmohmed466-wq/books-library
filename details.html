@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تفاصيل الكتاب</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell details-page">
+      <header class="details-header">
+        <button class="back-btn" onclick="window.location.href='library.html'">←</button>
+        <div class="brand-mini">تفاصيل الكتاب</div>
+      </header>
+
+      <main class="details-main">
+        <div class="details-cover-wrap">
+          <img id="detailCover" src="" alt="غلاف الكتاب" />
+        </div>
+
+        <div class="details-body">
+          <span id="detailCategory" class="chip">برمجة</span>
+          <h1 id="detailTitle">عنوان الكتاب</h1>
+          <p id="detailAuthor" class="detail-author">المؤلف</p>
+
+          <div class="meta-grid">
+            <div>
+              <label>اللغة</label>
+              <span id="detailLanguage">العربية</span>
+            </div>
+            <div>
+              <label>السنة</label>
+              <span id="detailYear">2023</span>
+            </div>
+            <div>
+              <label>عدد الصفحات</label>
+              <span id="detailPages">300</span>
+            </div>
+          </div>
+
+          <p id="detailSummary" class="detail-summary"></p>
+
+          <div class="detail-actions">
+            <a id="detailReadLink" class="primary-btn" href="#" target="_blank" rel="noopener noreferrer">اقرأ الآن</a>
+            <a href="library.html" class="secondary-btn">العودة</a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

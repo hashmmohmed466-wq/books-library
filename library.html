@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مكتبة الزانجي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="library-header">
+        <div class="header-top">
+          <div class="brand">📚 مكتبة الزانجي</div>
+          <div class="user-badge" id="userWelcome">مرحباً</div>
+        </div>
+
+        <div class="toolbar">
+          <input id="searchInput" type="text" placeholder="ابحث عن عنوان أو مؤلف..." />
+          <select id="categoryFilter">
+            <option value="">كل التصنيفات</option>
+            <option value="برمجة">برمجة</option>
+            <option value="أدب">أدب</option>
+            <option value="تاريخ">تاريخ</option>
+            <option value="علوم">علوم</option>
+          </select>
+        </div>
+      </header>
+
+      <main class="library-main">
+        <div class="stats">
+          <div class="stat">
+            <strong id="booksCount">0</strong>
+            <span>كتب</span>
+          </div>
+          <div class="stat">
+            <strong>5</strong>
+            <span>تصنيفات</span>
+          </div>
+          <div class="stat">
+            <strong>24/7</strong>
+            <span>متاحة</span>
+          </div>
+        </div>
+
+        <section id="booksGrid" class="books-grid"></section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

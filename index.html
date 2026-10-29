@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="phone-frame">
-      <div class="status-bar">
+    <div class="app-shell">
+      <div class="statusbar">
         <div class="status-left">١٠٪</div>
         <div class="status-center">
           <span>◉</span>
@@ -27,36 +27,34 @@
       </div>
 
       <div class="browser-bar">
-        <div class="nav-left">
-          <span class="menu-icon">⋮</span>
-        </div>
-
+        <div class="browser-side">⋮</div>
         <div class="browser-center">
           <span class="plus">＋</span>
-          <span class="url">digital-li.netlify.app</span>
+          <span class="browser-url">digital-li.netlify.app</span>
         </div>
-
-        <div class="nav-right">⌂</div>
+        <div class="browser-side">⌂</div>
       </div>
 
       <main class="content">
-        <section class="hero-card">
+        <section class="hero">
           <h1>مكتبة الزانجي الإلكترونية</h1>
           <p>وفق عملي وتفائي في إلكتروني متاح للجميع</p>
-          <div class="owner-pill">المؤسس والإدارة العامة: هاشم محمد أحمد</div>
+          <div class="owner">المؤسس والإدارة العامة: هاشم محمد أحمد</div>
         </section>
 
-        <section class="login-box">
+        <section class="login-panel">
           <h2>أهلاً بك في رحاب المكتبة</h2>
           <p>
             المكتبة مفتوحة ومتاحة لجميع الطلاب والباحثين والقراء، وتصفح كل ما تريد.
             يمكنك الدخول إلى المكتبة باستخدام اسمك، لتستمتع بخدمات القراءة والمصادر.
           </p>
 
-          <label for="readerName">اسم الزائر:</label>
-          <input id="readerName" type="text" placeholder="أدخل اسمك الكريم" />
+          <label class="label" for="readerName">اسم الزائر:</label>
+          <input id="readerName" class="input" type="text" placeholder="أدخل اسمك الكريم" />
 
-          <button id="enterLibrary" type="button">دخول المكتبة <span>→</span></button>
+          <button id="enterLibrary" class="submit" type="button">
+            دخول المكتبة <span>→</span>
+          </button>
         </section>
       </main>
 
