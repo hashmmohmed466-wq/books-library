@@ -3,111 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>مكتبة الكتب</title>
+    <title>مكتبة الزانجي الإلكترونية</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="container nav">
-        <div class="brand">
-          <span class="brand-icon">📚</span>
-          <span>مكتبة الكتب</span>
+    <div class="phone-shell">
+      <div class="status-bar">
+        <div class="status-left">1:14</div>
+        <div class="status-center">
+          <span>◉</span>
+          <span>◉</span>
+          <span>◉</span>
         </div>
-
-        <div class="search-wrap">
-          <input
-            id="searchInput"
-            type="text"
-            placeholder="ابحث عن عنوان أو مؤلف..."
-            aria-label="بحث في الكتب"
-          />
+        <div class="status-right">
+          <span>📶</span>
+          <span>📡</span>
+          <span>🔋</span>
         </div>
-
-        <select id="categoryFilter" aria-label="فلتر التصنيف">
-          <option value="">كل التصنيفات</option>
-          <option value="برمجة">برمجة</option>
-          <option value="أدب">أدب</option>
-          <option value="تاريخ">تاريخ</option>
-          <option value="علوم">علوم</option>
-        </select>
       </div>
-    </header>
 
-    <main class="container">
-      <section class="hero">
-        <div>
-          <span class="eyebrow">مكتبة إلكترونية</span>
-          <h1>اكتشف كتبًا تهمك وابدأ القراءة الآن</h1>
-          <p>
-            تصفح الكتب حسب التصنيف، ابحث عن عنوانك المفضل، وفتح الملف مباشرة من المتصفح.
+      <div class="browser-bar">
+        <div class="browser-actions">
+          <span class="dots">⋮</span>
+          <span class="dots">◫</span>
+        </div>
+
+        <div class="browser-address">digital-li.netlify.app</div>
+
+        <div class="browser-icon">⌂</div>
+      </div>
+
+      <main class="app-screen">
+        <section class="hero-card">
+          <h1>مكتبة الزانجي الإلكترونية</h1>
+          <p>وفق عملي وتفاي في إلكتروني متاح للجميع</p>
+          <div class="author-badge">المؤسس والإدارة العامة: هاشم محمد أحمد</div>
+        </section>
+
+        <section class="login-panel">
+          <h2>أهلاً بك في رحاب المكتبة</h2>
+
+          <p class="intro">
+            المكتبة مفتوحة ومتاحة لجميع الطلاب والباحثين والقراء، وتصفح كل ما تريد.
+            يمكنك الدخول إلى المكتبة باستخدام اسمك، لتستمتع بخدمات القراءة والمصادر.
           </p>
-        </div>
-      </section>
 
-      <section class="stats">
-        <div class="stat-card">
-          <strong id="booksCount">0</strong>
-          <span>كتب</span>
-        </div>
-        <div class="stat-card">
-          <strong>5</strong>
-          <span>تصنيفات</span>
-        </div>
-        <div class="stat-card">
-          <strong>24/7</strong>
-          <span>متاحة</span>
-        </div>
-      </section>
+          <label for="readerName" class="field-label">الاسم/الزائر:</label>
+          <input id="readerName" type="text" placeholder="أدخل اسمك الكريم" />
 
-      <section class="books-header">
-        <h2>الكتب المتاحة</h2>
-      </section>
+          <button id="enterLibrary" type="button">دخول المكتبة <span>→</span></button>
+        </section>
+      </main>
 
-      <section id="booksGrid" class="books-grid" aria-live="polite"></section>
-    </main>
-
-    <div id="bookModal" class="modal hidden" aria-hidden="true">
-      <div class="modal-backdrop" data-close="true"></div>
-      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-        <button class="close-btn" aria-label="إغلاق" data-close="true">×</button>
-
-        <div class="modal-cover-wrap">
-          <img id="modalCover" src="" alt="" />
-        </div>
-
-        <div class="modal-body">
-          <span id="modalCategory" class="chip"></span>
-          <h3 id="modalTitle"></h3>
-          <p class="author" id="modalAuthor"></p>
-
-          <div class="meta-grid">
-            <div>
-              <label>اللغة</label>
-              <span id="modalLanguage"></span>
-            </div>
-            <div>
-              <label>السنة</label>
-              <span id="modalYear"></span>
-            </div>
-            <div>
-              <label>عدد الصفحات</label>
-              <span id="modalPages"></span>
-            </div>
-          </div>
-
-          <p id="modalSummary" class="summary"></p>
-
-          <div class="modal-actions">
-            <a id="readLink" class="primary-btn" href="#" target="_blank" rel="noopener noreferrer">
-              اقرأ الآن
-            </a>
-            <button id="closeModalBtn" class="secondary-btn" type="button">إغلاق</button>
-          </div>
-        </div>
-      </div>
+      <nav class="bottom-nav" aria-label="التنقل السفلي">
+        <button class="nav-item active" aria-label="القائمة">▦</button>
+        <button class="nav-item" aria-label="الرئيسية">◯</button>
+        <button class="nav-item" aria-label="التالي">›</button>
+      </nav>
     </div>
 
     <script src="script.js"></script>
