@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>مكتبة الزانجي الإلكترونية</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="phone-shell">
+    <div class="phone-frame">
       <div class="status-bar">
-        <div class="status-left">1:14</div>
+        <div class="status-left">١٠٪</div>
         <div class="status-center">
+          <span>◉</span>
           <span>◉</span>
           <span>◉</span>
           <span>◉</span>
@@ -26,42 +27,43 @@
       </div>
 
       <div class="browser-bar">
-        <div class="browser-actions">
-          <span class="dots">⋮</span>
-          <span class="dots">◫</span>
+        <div class="nav-left">
+          <span class="menu-icon">⋮</span>
         </div>
 
-        <div class="browser-address">digital-li.netlify.app</div>
+        <div class="browser-center">
+          <span class="plus">＋</span>
+          <span class="url">digital-li.netlify.app</span>
+        </div>
 
-        <div class="browser-icon">⌂</div>
+        <div class="nav-right">⌂</div>
       </div>
 
-      <main class="app-screen">
+      <main class="content">
         <section class="hero-card">
           <h1>مكتبة الزانجي الإلكترونية</h1>
-          <p>وفق عملي وتفاي في إلكتروني متاح للجميع</p>
-          <div class="author-badge">المؤسس والإدارة العامة: هاشم محمد أحمد</div>
+          <p>وفق عملي وتفائي في إلكتروني متاح للجميع</p>
+          <div class="owner-pill">المؤسس والإدارة العامة: هاشم محمد أحمد</div>
         </section>
 
-        <section class="login-panel">
+        <section class="login-box">
           <h2>أهلاً بك في رحاب المكتبة</h2>
-
-          <p class="intro">
+          <p>
             المكتبة مفتوحة ومتاحة لجميع الطلاب والباحثين والقراء، وتصفح كل ما تريد.
             يمكنك الدخول إلى المكتبة باستخدام اسمك، لتستمتع بخدمات القراءة والمصادر.
           </p>
 
-          <label for="readerName" class="field-label">الاسم/الزائر:</label>
+          <label for="readerName">اسم الزائر:</label>
           <input id="readerName" type="text" placeholder="أدخل اسمك الكريم" />
 
           <button id="enterLibrary" type="button">دخول المكتبة <span>→</span></button>
         </section>
       </main>
 
-      <nav class="bottom-nav" aria-label="التنقل السفلي">
-        <button class="nav-item active" aria-label="القائمة">▦</button>
-        <button class="nav-item" aria-label="الرئيسية">◯</button>
-        <button class="nav-item" aria-label="التالي">›</button>
+      <nav class="bottom-nav" aria-label="التنقل">
+        <button class="nav-btn active" aria-label="القائمة">▤</button>
+        <button class="nav-btn" aria-label="الرئيسية">◯</button>
+        <button class="nav-btn" aria-label="التالي">›</button>
       </nav>
     </div>
 
